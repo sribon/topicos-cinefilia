@@ -1,0 +1,154 @@
+# depslib dependency file v1.0
+1791936929 source:c:\users\admin\desktop\cinefilia\alquiler.c
+	<stdlib.h>
+	<string.h>
+	"alquiler.h"
+	"cadena.h"
+	"util.h"
+
+1791933883 c:\users\admin\desktop\cinefilia\alquiler.h
+	"socio.h"
+	"titulo.h"
+
+1791922343 c:\users\admin\desktop\cinefilia\socio.h
+	<stdio.h>
+	"fecha.h"
+	"indice.h"
+	"lectura.h"
+	"validaciones.h"
+
+1791899890 c:\users\admin\desktop\cinefilia\fecha.h
+
+1791687794 c:\users\admin\desktop\cinefilia\indice.h
+	<stddef.h>
+
+1791921628 c:\users\admin\desktop\cinefilia\lectura.h
+	<stdio.h>
+	"indice.h"
+	"fecha.h"
+
+1791945051 c:\users\admin\desktop\cinefilia\validaciones.h
+	"fecha.h"
+	"indice.h"
+
+1791925900 c:\users\admin\desktop\cinefilia\titulo.h
+	<stdio.h>
+	"indice.h"
+	"lectura.h"
+
+1791687794 c:\users\admin\desktop\cinefilia\cadena.h
+
+1791919438 c:\users\admin\desktop\cinefilia\util.h
+	<stdio.h>
+	<stdlib.h>
+	"alquiler.h"
+
+1791687794 source:c:\users\admin\desktop\cinefilia\auditoria.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"auditoria.h"
+	"lectura.h"
+	"cadena.h"
+	"util.h"
+	"indice.h"
+
+1791687794 c:\users\admin\desktop\cinefilia\auditoria.h
+	"fecha.h"
+
+1791687794 source:c:\users\admin\desktop\cinefilia\cadena.c
+	<string.h>
+	<ctype.h>
+	<stddef.h>
+	"cadena.h"
+
+1791900001 source:c:\users\admin\desktop\cinefilia\fecha.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<time.h>
+	<conio.h>
+	"fecha.h"
+	"util.h"
+	"indice.h"
+
+1791935708 source:c:\users\admin\desktop\cinefilia\indice.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"indice.h"
+
+1791944234 source:c:\users\admin\desktop\cinefilia\lectura.c
+	<string.h>
+	"lectura.h"
+	"util.h"
+	"cadena.h"
+	"socio.h"
+	"titulo.h"
+	"config.h"
+
+1791687794 c:\users\admin\desktop\cinefilia\config.h
+
+1791938099 source:c:\users\admin\desktop\cinefilia\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"config.h"
+	"util.h"
+	"menu.h"
+	"fecha.h"
+	"indice.h"
+	"lectura.h"
+	"socio.h"
+	"titulo.h"
+	"novedad.h"
+	"alquiler.h"
+	"auditoria.h"
+	"generador.h"
+
+1791687794 c:\users\admin\desktop\cinefilia\menu.h
+
+1791687794 c:\users\admin\desktop\cinefilia\novedad.h
+	"titulo.h"
+
+1791687794 c:\users\admin\desktop\cinefilia\generador.h
+
+1791687794 source:c:\users\admin\desktop\cinefilia\novedad.c
+	<string.h>
+	"novedad.h"
+	"cadena.h"
+
+1791945015 source:c:\users\admin\desktop\cinefilia\socio.c
+	<stdlib.h>
+	<string.h>
+	"socio.h"
+	"cadena.h"
+	"util.h"
+	"auditoria.h"
+	"config.h"
+	"menu.h"
+
+1791944250 source:c:\users\admin\desktop\cinefilia\titulo.c
+	<stdlib.h>
+	<string.h>
+	"titulo.h"
+	"cadena.h"
+	"util.h"
+
+1791919447 source:c:\users\admin\desktop\cinefilia\util.c
+	<string.h>
+	"util.h"
+	"cadena.h"
+	"config.h"
+
+1791945169 source:c:\users\admin\desktop\cinefilia\validaciones.c
+	<ctype.h>
+	<stdio.h>
+	<string.h>
+	<stdbool.h>
+	"validaciones.h"
+	"fecha.h"
+	"indice.h"
+	"socio.h"
+	"titulo.h"
+

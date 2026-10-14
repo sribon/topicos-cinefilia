@@ -1,0 +1,174 @@
+#include <stdlib.h>
+#include <string.h>
+#include "titulo.h"
+#include "cadena.h"
+#include "util.h"
+
+/*============================================================================*/
+/*            FUNCIONES A IMPLEMENTAR POR EL ALUMNO (version _ALU)             */
+/*============================================================================*/
+
+/******************************************************************************
+Descripcion:    convierte una linea CSV de 4 campos en t_titulo. Los campos
+                numericos invalidos quedan en valores que fallan la validacion
+                (id = 0, stock = -1). El estado se fija en 'A'.
+Parametros:     linea: linea CSV.
+                reg: puntero a t_titulo destino.
+Retorno:        OK si la cantidad de campos es correcta, ERROR en caso
+                contrario.
+Observaciones:  Se pasa por puntero como parsear a leer_archivo_texto.
+******************************************************************************/
+int texto_a_titulo_ALU(const char *linea, void *reg)
+{
+    t_titulo *titulo = reg;
+
+    char extra;     //Variable utilizada para verificar que no haya caracter indeseado en el ingreso.
+    char cadena[TAM_LINEA];
+    strcpy(cadena, linea);
+
+    char *ps = cadena;       //Puntero para recorrer la linea.
+    char *aux = strchr(cadena, ';');     //Auxiliar para encontrar el siguiente campo.
+
+    //ID PELICULA
+    *aux = '\0';
+    aux++;
+    //Si el ID contiene un caracter no correspondiente devuelvo error.
+    if(sscanf(ps, "%d %c", &titulo->id, &extra) != 1)
+    {
+        titulo->id = 0;
+        return ERROR;
+    }
+    ps = aux;
+
+    //TITULO
+    aux = strchr(ps, ';');
+    *aux = '\0';
+    aux++;
+    //Si el titulo esta vacio o es mas largo de lo permitido devuelvo error.
+    if(strlen(ps) >= TAM_TITULO || strlen(ps) == 0)
+    {
+        strcpy(titulo->titulo, "\0");
+        return ERROR;
+    }
+    strcpy(titulo->titulo, ps);
+    ps = aux;
+
+    //GENERO
+    aux = strchr(ps, ';');
+    *aux = '\0';
+    aux++;
+    //Si el genero esta vacio o es mas largo de lo permitido devuelvo error.
+    if(strlen(ps) >= TAM_GENERO || strlen(ps) == 0)
+    {
+        strcpy(titulo->genero, "\0");
+        return ERROR;
+    }
+    strcpy(titulo->genero, ps);
+    ps = aux;
+
+    //STOCK
+    aux = strchr(ps, '\n');
+    *aux = '\0';
+    //Si el stock contiene un caracter no correspondiente devuelvo error.
+    if(sscanf(ps, "%d %c", &titulo->stock, &extra) != 1)
+    {
+        titulo->stock = -1;
+        return ERROR;
+    }
+
+    titulo->estado = 'A';
+
+    return OK;
+}
+
+/******************************************************************************
+Descripcion:    aplica las validaciones del punto 6.2 en orden: ID > 0 y no
+                existente en el indice, titulo normalizado no vacio, genero
+                dentro de GENEROS[] y stock >= 0. Se detiene en el primer
+                error.
+Parametros:     reg: puntero a t_titulo (se modifica al normalizar el titulo).
+                ctx: contexto con indice e id_modificando.
+                tipo_error: salida; nombre de la validacion que fallo.
+Retorno:        OK si el titulo es valido, ERROR en caso contrario.
+Observaciones:  Se pasa por puntero como validar a leer_archivo_texto. Se reutiliza en las altas del
+                lote de novedades.
+******************************************************************************/
+int valida_titulo_ALU(void *reg, const t_contexto *ctx, char *tipo_error)
+{
+    t_titulo *titulo = reg;
+    t_reg_indice reg_temporal;
+
+    //ID PELICULA
+    if(!validar_id(titulo->id))
+    {
+        strcpy(tipo_error, "ID");
+        return ERROR;
+    }
+    reg_temporal.id = titulo->id;
+    if(indice_buscar_ALU(ctx->indice, &reg_temporal, sizeof(t_reg_indice), compara_reg_indice_ALU) != NO_EXISTE)
+    {
+        strcpy(tipo_error, "ID");
+        return ERROR;
+    }
+
+    //TITULO
+    if(normalizar_titulo(titulo->titulo) != OK)
+    {
+        strcpy(tipo_error, "TITULO");
+        return ERROR;
+    }
+
+    //GENERO
+    if(!validar_genero(titulo->genero))
+    {
+        strcpy(tipo_error, "GENERO");
+        return ERROR;
+    }
+
+    //STOCK
+    if(!validar_stock(titulo->stock))
+    {
+        strcpy(tipo_error, "STOCK");
+        return ERROR;
+    }
+
+    return OK;
+}
+
+/******************************************************************************
+Descripcion:    recorre el indice (ordenado por ID y solo con activos) y lista
+                los titulos leyendo cada registro del archivo.
+Parametros:     indice: indice de titulos.
+                path: ruta de titulos.dat.
+Retorno:        OK si se pudo abrir el archivo, ERROR en caso contrario.
+Observaciones:  -
+******************************************************************************/
+int titulos_listar_ALU(const t_indice *indice, const char *path)
+{
+    /* TODO: reemplazar esta llamada a la funcion de la catedra por su propia
+       implementacion. En la entrega no puede quedar ninguna llamada a una
+       funcion de la biblioteca que tenga version _ALU. */
+    return titulos_listar(indice, path);
+}
+
+int es_activo_titulo(const void *registro)
+{
+    const t_titulo *titulo = registro;
+
+    return titulo->estado == 'A';
+}
+
+long obtener_clave_titulo(const void *registro)
+{
+    const t_titulo *titulo = registro;
+
+    return titulo->id;
+}
+
+void rechazar_titulo(const void *reg, const char *linea, const char *tipo_error, const t_fecha *fecha_proc)
+{
+    (void)reg;
+    (void)tipo_error;
+    (void)linea;
+    (void)fecha_proc;
+}
