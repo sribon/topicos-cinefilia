@@ -2,33 +2,34 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="titulo.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1767" topLine="15" />
-		</Cursor>
-	</File>
-	<File name="socio.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="16203" topLine="311" />
-		</Cursor>
-		<Folding>
-			<Collapse line="13" />
-			<Collapse line="440" />
-		</Folding>
-	</File>
-	<File name="util.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1378" topLine="0" />
-		</Cursor>
-	</File>
 	<File name="util.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="988" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="indice.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="titulo.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="10183" topLine="16" />
+			<Cursor1 position="4392" topLine="140" />
+		</Cursor>
+	</File>
+	<File name="generador.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="novedad.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="798" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="socio.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="26630" topLine="519" />
+		</Cursor>
+	</File>
+	<File name="indice.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9621" topLine="48" />
 		</Cursor>
 		<Folding>
 			<Collapse line="9" />
@@ -53,12 +54,16 @@
 			<Collapse line="205" />
 			<Collapse line="213" />
 			<Collapse line="220" />
-			<Collapse line="241" />
 		</Folding>
 	</File>
-	<File name="fecha.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="validaciones.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="4" />
+			<Cursor1 position="12183" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="util.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1378" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="indice.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -82,51 +87,37 @@
 			<Collapse line="138" />
 		</Folding>
 	</File>
-	<File name="alquiler.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="fecha.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="5628" topLine="141" />
+			<Cursor1 position="0" topLine="4" />
 		</Cursor>
 	</File>
-	<File name="lectura.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="auditoria.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="513" topLine="1" />
-		</Cursor>
-		<Folding>
-			<Collapse line="18" />
-			<Collapse line="25" />
-		</Folding>
-	</File>
-	<File name="validaciones.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="793" topLine="22" />
-		</Cursor>
-	</File>
-	<File name="generador.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="1459" topLine="14" />
 		</Cursor>
 	</File>
 	<File name="main.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="5304" topLine="67" />
+			<Cursor1 position="4331" topLine="105" />
 		</Cursor>
 	</File>
-	<File name="titulo.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="lectura.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4346" topLine="81" />
+			<Cursor1 position="446" topLine="0" />
 		</Cursor>
 		<Folding>
-			<Collapse line="83" />
+			<Collapse line="25" />
 		</Folding>
 	</File>
-	<File name="validaciones.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="novedad.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="12183" topLine="0" />
+			<Cursor1 position="1672" topLine="12" />
 		</Cursor>
 	</File>
-	<File name="lectura.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="alquiler.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3430" topLine="54" />
+			<Cursor1 position="719" topLine="33" />
 		</Cursor>
 	</File>
 	<File name="config.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -134,19 +125,29 @@
 			<Cursor1 position="753" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="novedad.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="alquiler.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1879" topLine="0" />
+			<Cursor1 position="1248" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="validaciones.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="793" topLine="22" />
 		</Cursor>
 	</File>
 	<File name="socio.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="-2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="434" topLine="53" />
+			<Cursor1 position="3544" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="auditoria.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="titulo.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1459" topLine="14" />
+			<Cursor1 position="1767" topLine="15" />
+		</Cursor>
+	</File>
+	<File name="lectura.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6012" topLine="118" />
 		</Cursor>
 	</File>
 	<File name="fecha.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -159,10 +160,5 @@
 			<Collapse line="57" />
 			<Collapse line="84" />
 		</Folding>
-	</File>
-	<File name="alquiler.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1248" topLine="0" />
-		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

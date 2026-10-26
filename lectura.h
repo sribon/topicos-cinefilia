@@ -42,7 +42,7 @@ int generar_binarios(t_indice *ind_socios, t_indice *ind_titulos, const t_fecha 
 
 #define AUDITAR_ERRORES 1
 #define NO_AUDITAR_ERRORES 0
-#define TAM_ERROR 51
+#define TAM_INGRESO 101
 
 int leer_archivo_texto_ALU(const char *path_txt, FILE *arch_bin, t_indice *indice,
                        void *reg, size_t tamanyo, const t_fecha *fecha_proceso,

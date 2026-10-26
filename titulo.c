@@ -105,7 +105,7 @@ int valida_titulo_ALU(void *reg, const t_contexto *ctx, char *tipo_error)
         return ERROR;
     }
     reg_temporal.id = titulo->id;
-    if(indice_buscar_ALU(ctx->indice, &reg_temporal, sizeof(t_reg_indice), compara_reg_indice_ALU) != NO_EXISTE)
+    if(ctx->id_modificando == 0 && indice_buscar_ALU(ctx->indice, &reg_temporal, sizeof(t_reg_indice), compara_reg_indice_ALU) != NO_EXISTE)
     {
         strcpy(tipo_error, "ID");
         return ERROR;

@@ -10,7 +10,7 @@
 	"socio.h"
 	"titulo.h"
 
-1791922343 c:\users\admin\desktop\cinefilia\socio.h
+1791991140 c:\users\admin\desktop\cinefilia\socio.h
 	<stdio.h>
 	"fecha.h"
 	"indice.h"
@@ -22,7 +22,7 @@
 1791687794 c:\users\admin\desktop\cinefilia\indice.h
 	<stddef.h>
 
-1791921628 c:\users\admin\desktop\cinefilia\lectura.h
+1792001905 c:\users\admin\desktop\cinefilia\lectura.h
 	<stdio.h>
 	"indice.h"
 	"fecha.h"
@@ -108,19 +108,20 @@
 
 1791687794 c:\users\admin\desktop\cinefilia\menu.h
 
-1791687794 c:\users\admin\desktop\cinefilia\novedad.h
+1792074208 c:\users\admin\desktop\cinefilia\novedad.h
 	"titulo.h"
 
 1791687794 c:\users\admin\desktop\cinefilia\generador.h
 
-1791687794 source:c:\users\admin\desktop\cinefilia\novedad.c
+1792077577 source:c:\users\admin\desktop\cinefilia\novedad.c
 	<string.h>
 	"novedad.h"
 	"cadena.h"
 
-1791945015 source:c:\users\admin\desktop\cinefilia\socio.c
+1793040523 source:c:\users\admin\desktop\cinefilia\socio.c
 	<stdlib.h>
 	<string.h>
+	<conio.h>
 	"socio.h"
 	"cadena.h"
 	"util.h"
@@ -128,7 +129,7 @@
 	"config.h"
 	"menu.h"
 
-1791944250 source:c:\users\admin\desktop\cinefilia\titulo.c
+1792074498 source:c:\users\admin\desktop\cinefilia\titulo.c
 	<stdlib.h>
 	<string.h>
 	"titulo.h"
